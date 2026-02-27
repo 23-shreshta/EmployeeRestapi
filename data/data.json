@@ -1,0 +1,48 @@
+cat > data/data.json << 'EOF'
+{
+  "employees": [
+    {
+      "EmployeeID": 1,
+      "FirstName": "John",
+      "LastName": "Doe",
+      "Gender": "Male",
+      "DateOfBirth": "1990-05-15"
+    },
+    {
+      "EmployeeID": 2,
+      "FirstName": "Jane",
+      "LastName": "Smith",
+      "Gender": "Female",
+      "DateOfBirth": "1992-08-22"
+    }
+  ],
+  "departments": [
+    {
+      "DepartmentID": 1,
+      "DepartmentName": "Engineering",
+      "Location": "New York"
+    },
+    {
+      "DepartmentID": 2,
+      "DepartmentName": "HR",
+      "Location": "Chicago"
+    }
+  ],
+  "salaries": [
+    {
+      "SalaryID": 1,
+      "EmployeeID": 1,
+      "BasicSalary": 60000,
+      "Bonus": 5000,
+      "Allowances": 2000
+    },
+    {
+      "SalaryID": 2,
+      "EmployeeID": 2,
+      "BasicSalary": 55000,
+      "Bonus": 3000,
+      "Allowances": 1500
+    }
+  ]
+}
+EOF
