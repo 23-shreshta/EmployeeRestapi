@@ -1,4 +1,3 @@
-cat > app.py << 'EOF'
 from flask import Flask
 from routes.employees import employees_bp
 from routes.departments import departments_bp
@@ -12,4 +11,3 @@ app.register_blueprint(salaries_bp)
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
-EOF
