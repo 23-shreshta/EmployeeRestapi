@@ -1,4 +1,3 @@
-cat > routes/departments.py << 'EOF'
 from flask import Blueprint, jsonify, request
 import json, os
 
@@ -48,4 +47,3 @@ def delete_department(id):
     data['departments'] = [d for d in data['departments'] if d['DepartmentID'] != id]
     save_data(data)
     return jsonify({'message': 'Deleted successfully'})
-EOF
