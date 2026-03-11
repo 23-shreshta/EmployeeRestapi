@@ -1,48 +1,83 @@
-cat > data/data.json << 'EOF'
 {
   "employees": [
     {
       "EmployeeID": 1,
-      "FirstName": "John",
-      "LastName": "Doe",
+      "FirstName": "Arjun",
+      "LastName": "Sharma",
       "Gender": "Male",
-      "DateOfBirth": "1990-05-15"
+      "DateOfBirth": "1988-03-12",
+      "id": 1,
+      "title": "updated",
+      "body": "text",
+      "userId": 1
     },
     {
       "EmployeeID": 2,
-      "FirstName": "Jane",
-      "LastName": "Smith",
+      "FirstName": "Priya",
+      "LastName": "Nair",
       "Gender": "Female",
-      "DateOfBirth": "1992-08-22"
+      "DateOfBirth": "1993-07-25"
+    },
+    {
+      "EmployeeID": 4,
+      "FirstName": "Sneha",
+      "LastName": "Iyer",
+      "Gender": "Female",
+      "DateOfBirth": "1991-04-18"
+    },
+    {
+      "id": 1,
+      "title": "updated",
+      "body": "text",
+      "userId": 1,
+      "EmployeeID": 5
     }
   ],
   "departments": [
     {
       "DepartmentID": 1,
       "DepartmentName": "Engineering",
-      "Location": "New York"
+      "Location": "Bangalore"
     },
     {
       "DepartmentID": 2,
       "DepartmentName": "HR",
-      "Location": "Chicago"
+      "Location": "Mumbai"
+    },
+    {
+      "DepartmentID": 3,
+      "DepartmentName": "Finance",
+      "Location": "Delhi"
     }
   ],
   "salaries": [
     {
       "SalaryID": 1,
       "EmployeeID": 1,
-      "BasicSalary": 60000,
-      "Bonus": 5000,
-      "Allowances": 2000
+      "BasicSalary": 75000,
+      "Bonus": 8000,
+      "Allowances": 3000
     },
     {
       "SalaryID": 2,
       "EmployeeID": 2,
+      "BasicSalary": 68000,
+      "Bonus": 6000,
+      "Allowances": 2500
+    },
+    {
+      "SalaryID": 3,
+      "EmployeeID": 3,
       "BasicSalary": 55000,
-      "Bonus": 3000,
-      "Allowances": 1500
+      "Bonus": 4000,
+      "Allowances": 2000
+    },
+    {
+      "SalaryID": 4,
+      "EmployeeID": 4,
+      "BasicSalary": 62000,
+      "Bonus": 5000,
+      "Allowances": 2200
     }
   ]
 }
-EOF

@@ -1,4 +1,3 @@
-cat > routes/salaries.py << 'EOF'
 from flask import Blueprint, jsonify, request
 import json, os
 
@@ -48,4 +47,3 @@ def delete_salary(id):
     data['salaries'] = [s for s in data['salaries'] if s['SalaryID'] != id]
     save_data(data)
     return jsonify({'message': 'Deleted successfully'})
-EOF
